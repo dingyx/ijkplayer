@@ -3,11 +3,12 @@
   <groupId>com.sdtv.haikan</groupId>
   <artifactId>ijkplayer</artifactId>
   <versioning>
-    <release>0.0.1</release>
+    <release>0.0.2</release>
     <versions>
       <version>1.0.0</version>
       <version>0.0.1</version>
+      <version>0.0.2</version>
     </versions>
-    <lastUpdated>20210329025352</lastUpdated>
+    <lastUpdated>20210329054756</lastUpdated>
   </versioning>
 </metadata>
