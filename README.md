@@ -4,7 +4,44 @@
 
 依赖此so库后，可参考 [官方使用Demo](https://github.com/bilibili/ijkplayer/tree/master/android/ijkplayer/ijkplayer-example) 编写相应界面即可实现视频播放
 
+
+
+* 使用方法
+
+  1. 在项目工程的 build.gradle 中，指定 maven 仓库地址：
+
+     ```groovy
+     
+     allprojects {
+         repositories {
+             google()
+             jcenter()
+             maven{
+                 url "https://raw.githubusercontent.com/dingyx/ijkplayer/main"
+             }
+         }
+     }
+     ```
+
+     > 主要是指定该仓库地址： “https://raw.githubusercontent.com/dingyx/ijkplayer/main“
+
+  2.  在需要使用该库的 module 下 build.gradle 中添加依赖
+
+     ```groovy
+     dependencies {
+         implementation fileTree(include: ['*.jar'], dir: 'libs')
+         implementation 'androidx.appcompat:appcompat:1.0.0'
+         implementation 'com.sdtv.haikan:ijkplayer:0.0.2'
+     }
+     ```
+
+     > 主要是指定该依赖：'com.sdtv.haikan:ijkplayer:0.0.2'
+
+
+
 * 0.0.1 版本，编译了支持 arm64-v8a、armeabi、armeabi-v7a、x86、x86_64 平台 so
 
 * 0.0.2 版本，去掉 x86、x86_64 平台 so
+
+
 
