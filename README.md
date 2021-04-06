@@ -43,5 +43,7 @@
 
 * 0.0.2 版本，去掉 x86、x86_64 平台 so
 
+* 项目地址 [ijkplayer android lib](https://git.io/JY7ld)
+
 
 
